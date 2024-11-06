@@ -1,0 +1,58 @@
+.features {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    padding: 60px 20px; /* Adds top and bottom padding for better spacing */
+    text-align: center; /* Centers the text */
+    background-color: #f9f9f9; /* Light background color for contrast */
+  }
+  
+  .features.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px; /* Space below the heading */
+    color: #333; /* Darker color for better contrast */
+  }
+  
+  .feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Increased gap between the feature cards */
+    max-width: 1200px; /* Limits the width of the feature cards */
+    margin: 0 auto; /* Centers the feature cards container */
+  }
+  
+  .feature-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    max-width: 280px;
+    width: 100%; /* Makes sure cards are responsive */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e6e6e6; /* Subtle border for a clean look */
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px; /* Space below the card heading */
+    color: #555; /* Darker color for better readability */
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #666; /* Subtle color for the description text */
+    line-height: 1.6; /* Improved readability */
+  }
+  

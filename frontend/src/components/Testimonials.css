@@ -1,0 +1,47 @@
+/* src/components/Testimonials.css */
+.testimonials {
+    padding: 60px 20px; /* Spacing around the testimonials section */
+    background-color: #ffffff; /* Background color */
+    text-align: center; /* Center text alignment */
+    /* position: relative; Position relative for absolute child */
+    overflow: hidden; /* Hide overflowing elements */
+    margin: 0 auto; /* Center the section itself */
+    max-width: 1200px; /* Max width for the section to keep it aligned */
+    margin-bottom: 60px; /* Space below the testimonials section for footer */
+    min-height: 300px; /* Set a minimum height for the section */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+  }
+  
+  .testimonials h2 {
+    margin-bottom: 30px; /* Space below the heading */
+    font-size: 2.5rem; /* Font size for the heading */
+    color: #333; /* Color of the heading text */
+  }
+  
+  .testimonial-card {
+    background-color: #f9f9f9; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 40px; /* Inner padding for the card */
+    max-width: 600px; /* Maximum width for the card */
+    margin: 0 auto; /* Center the testimonial card */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition */
+    /* position: absolute; Positioned absolutely */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centering the card */
+    opacity: 0; /* Start with hidden opacity */
+  }
+  
+  .testimonial-card-active {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Original position */
+  }
+  
+  .testimonial-card-exit {
+    opacity: 0; /* Fade out */
+    transform: translateY(-20px); /* Move up for exit animation */
+  }
+  

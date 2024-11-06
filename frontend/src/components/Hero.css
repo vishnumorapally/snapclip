@@ -1,0 +1,56 @@
+/* src/components/Hero.css */
+.hero {
+    background: linear-gradient(135deg, #4a90e2, #9013fe); /* Gradient background */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 100px 20px; /* Padding for the section */
+    position: relative; /* To position overlay */
+  }
+  
+  .hero-content {
+    position: relative; /* Position content above the overlay */
+    z-index: 1; /* Bring the content above the overlay */
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem; /* Heading size */
+    margin-bottom: 20px; /* Space below heading */
+  }
+  
+  .hero p {
+    font-size: 1.5rem; /* Paragraph size */
+    margin-bottom: 30px; /* Space below paragraph */
+  }
+  
+  .hero-buttons {
+    display: flex; /* Flexbox for button alignment */
+    justify-content: center; /* Center buttons */
+    gap: 20px; /* Space between buttons */
+  }
+  
+  .btn {
+    padding: 15px 30px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d; /* Secondary button color */
+    color: white; /* Text color */
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+  }
+  

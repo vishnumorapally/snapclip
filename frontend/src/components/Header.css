@@ -1,0 +1,113 @@
+/* src/components/Header.css */
+.header {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-around; /* Space between logo and navbar */
+    align-items: center; /* Center items vertically */
+    background-color: white; /* White background */
+    padding: 10px 20px; /* Padding for header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+    position: fixed; /* Fixed positioning */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Keep it above other elements */
+  }
+  
+  .logo {
+    font-size: 1.8rem; /* Logo size */
+    color: #333; /* Logo color */
+    font-weight: bold; /* Bold text */
+    white-space: nowrap; /* Prevent logo from wrapping */
+  }
+  
+  .navbar {
+    display: flex; /* Flexbox for navbar */
+    align-items: center; /* Center items vertically */
+    /* flex-grow: 1; Allow navbar to grow and take available space */
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  .navbar ul {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Flexbox for horizontal list */
+    gap: 20px; /* Space between menu items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .navbar ul li a {
+    color: #333; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 8px 16px; /* Padding for links */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+  }
+  
+  .navbar ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light background on hover */
+  }
+  
+  /* Close button styles */
+  .close-btn {
+    background: none; /* No background */
+    border: none; /* No border */
+    font-size: 2rem; /* Size of the close button */
+    color: #333; /* Color of the close button */
+    position: absolute; /* Position it absolutely */
+    top: 10px; /* Position from top */
+    right: 20px; /* Position from right */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  /* Responsive Styles */
+  .menu-toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stack the bars vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .bar {
+    height: 3px; /* Height of the hamburger bars */
+    width: 25px; /* Width of the hamburger bars */
+    background-color: #333; /* Color of the bars */
+    margin: 3px 0; /* Space between bars */
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      position: absolute; /* Position absolutely when active */
+      top: 60px; /* Below the header */
+      left: 0;
+      right: 0;
+      background-color: white; /* Ensure background color */
+      flex-direction: column; /* Stack vertically */
+      align-items: stretch; /* Align items to stretch full width */
+      display: none; /* Hidden by default */
+      width: 100%; /* Full width */
+      padding: 10px 0; /* Padding for dropdown */
+    }
+  
+    .navbar.active {
+      display: flex; /* Show when active */
+    }
+  
+    .menu-toggle {
+      display: flex; /* Show hamburger icon on small screens */
+    }
+  
+    .navbar ul {
+      flex-direction: column; /* Stack links vertically */
+      width: 100%; /* Full width for dropdown */
+      margin: 0; /* Reset margin */
+    }
+  
+    .navbar ul li {
+      width: 100%; /* Full width for each item */
+      text-align: center; /* Center align text */
+    }
+  
+    .navbar ul li a {
+      padding: 10px 0; /* Padding for links */
+      display: block; /* Full clickable area */
+    }
+  }
+  

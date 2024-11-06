@@ -1,0 +1,40 @@
+/* src/components/HowItWorks.css */
+.how-it-works {
+    padding: 60px 20px; /* Padding for the section */
+    background-color: #f8f9fa; /* Light background color */
+    text-align: center; /* Center text */
+  }
+  
+  .how-it-works h2 {
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 40px; /* Space below heading */
+    color: #333; /* Color of the heading text */
+  }
+  
+  .steps {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center steps */
+    flex-wrap: wrap; /* Wrap steps on smaller screens */
+    gap: 20px; /* Space between steps */
+  }
+  
+  .step-card {
+    background-color: #ffffff; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 20px; /* Inner padding for the card */
+    flex: 1; /* Allow cards to grow and fill the space */
+    min-width: 250px; /* Minimum width for cards */
+    max-width: 300px; /* Maximum width for cards */
+    transition: transform 0.3s ease; /* Animation on hover */
+  }
+  
+  .step-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .step-icon {
+    font-size: 3rem; /* Icon size */
+    margin-bottom: 10px; /* Space below icon */
+  }
+  
