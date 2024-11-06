@@ -13,7 +13,7 @@ const app = express()
 
 app.use(express.json())
 app.use("/",router)
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://snapclip.netlify.app' }));
 app.use(bodyParser.json());
 
 
