@@ -37,20 +37,20 @@ function Retrieve() {
             return;
         }
 
-        setLoading(true); // Start the loader
+        // setLoading(true); // Start the loader
 
         // Simulate an API call or any asynchronous operation
-        try {
-            // You can replace this with your API call
-            const response = await axios.get(`/get/${codeString}`);
-            setRetrievedText(response.data); // Use the response data
-            setIsContentRetrieved(true);
-        } catch (error) {
-            setValidationMessage('Failed to retrieve content. Please try again.');
-            setIsContentRetrieved(false);
-        } finally {
-            setLoading(false); // Stop the loader
-        }
+        // try {
+        //     // You can replace this with your API call
+        //     const response = await axios.get(`/get/${codeString}`);
+        //     setRetrievedText(response.data); // Use the response data
+        //     setIsContentRetrieved(true);
+        // } catch (error) {
+        //     setValidationMessage('Failed to retrieve content. Please try again.');
+        //     setIsContentRetrieved(false);
+        // } finally {
+        //     setLoading(false); // Stop the loader
+        // }
 
         navigate(`/get/${codeString}`);
     };

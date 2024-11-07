@@ -62,7 +62,7 @@ function Linkget() {
         setLoading(true); // Start loading
 
         try {
-            const checkcodeindatabase = await axios.post("/get", { "code": codeString });
+            const checkcodeindatabase = await axios.post("/get", { code: codeString });
             if (checkcodeindatabase) {
                 setRetrievedText(checkcodeindatabase.data.data.data);
             } else {

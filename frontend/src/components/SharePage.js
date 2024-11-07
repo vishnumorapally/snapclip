@@ -68,7 +68,7 @@ function SharePage() {
                 let isUnique = false;
                 while (!isUnique) {
                     try {
-                        await axios.post('/checkcode', { "code": codeToUse });
+                        await axios.post('/checkcode', { code: codeToUse });
                         isUnique = true;
                     } catch {
                         codeToUse = generateRandomCode();
@@ -77,7 +77,7 @@ function SharePage() {
                 setGeneratedCode(codeToUse);
             }
 
-            await axios.post('/share', { "code": codeToUse, "data": text });
+            await axios.post('/share', { code : codeToUse, data: text });
             setShareLink(`/${codeToUse}`);
             setIsLinkGenerated(true);
         } catch (err) {
@@ -158,8 +158,8 @@ function SharePage() {
                     <div className="share-result">
                         <p>Code: {shareLink.replace("/", "")}</p>
                         <p>Your unique shareable link is:
-                            <Link to={`/get${shareLink}`} target="_blank" rel="noopener noreferrer">
-                                {`/get${shareLink}`}
+                            <Link to={`https://snapclip-1.onrender.com/get${shareLink}`} target="_blank" rel="noopener noreferrer">
+                                {`https://snapclip-1.onrender.com/get${shareLink}`}
                             </Link>
                         </p>
                     </div>
